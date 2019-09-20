@@ -3,6 +3,8 @@ baseurl: ""
 url: "https://UCLASunLab.github.io"
 title: Data Mining Group #@ UCLA # site's title
 description: "Homepage of UCLA data mining group" # used by search engines
+domain: "aideadlin.es"
+
 
 defaults:
   - scope:
