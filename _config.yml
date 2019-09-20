@@ -8,7 +8,7 @@ defaults:
   - scope:
       path: "" # an empty string here means all necessary files are in the project
     values:
-      image: assets/img/triangle.png # seo tag
+      image: assets/img/ucla_logo.png # seo tag
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
