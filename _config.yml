@@ -1,19 +1,19 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://UCLASunLab.github.io"
-title: Data Mining Group @ UCLA # site's title
+title: Data Mining Group #@ UCLA # site's title
 description: "Homepage of UCLA data mining group" # used by search engines
 
 defaults:
   - scope:
       path: "" # an empty string here means all necessary files are in the project
     values:
-      image: #assets/img/ucla_logo.png # seo tag
+      image: assets/img/scai.png
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  avatar: #assets/img/ucla_logo.png
+  avatar: assets/img/scai.png
   color_image: /assets/img/lineart.png # In post when you set color
   favicon: #assets/favicon.ico
 
