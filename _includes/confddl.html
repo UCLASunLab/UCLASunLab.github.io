@@ -223,7 +223,8 @@
         {% endfor %}
 
         // Get subjects from URL
-        var url = new URL(window.location);
+        // var url = new URL(window.location);
+        var url = new URL('https://uclasunlab.github.io/conferences/');
         var subs = url.searchParams.get('sub');
         if (subs == undefined) {
            subs = store.get('https://uclasunlab.github.io/conferences/');
