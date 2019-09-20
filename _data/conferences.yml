@@ -1,6 +1,17 @@
 
 ---
 
+- title: TEST
+  year: 2020
+  id: alt2020
+  link: http://alt2020.algorithmiclearningtheory.org/
+  deadline: '2019-10-20 16:59:59'
+  timezone: America/New_York
+  date: February 08-10, 2020
+  place: San Diego, CA, United States
+  sub: DL
+
+
 - title: ALT
   year: 2020
   id: alt2020
