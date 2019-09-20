@@ -13,7 +13,7 @@ defaults:
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  avatar: assets/img/triangle.png
+  avatar: assets/img/ucla_logo.png
   color_image: /assets/img/lineart.png # In post when you set color
   favicon: assets/favicon.ico
 
