@@ -1,4 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <!-- <title>{{ site.title }}</title> -->
+    <!-- <meta name="description" content="{{ site.description }}"> -->
+    <!-- <meta name="author" content="{{ site.author }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ "/static/css/bootstrap.min.css" | prepend:site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/static/css/deadlines.css" | prepend:site.baseurl }}?t={{site.time | date: '%s'}}" media="screen,projection">
+    <!-- <link rel="shortcut icon" href="{{ "/static/img/favicon.png" | prepend:site.baseurl }}"> -->
+    <script type="text/javascript" src="{{ "/static/js/jquery.min.js" | prepend:site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/static/js/jquery.countdown.min.js" | prepend:site.baseurl }}"></script>
+    <script src="{{ "/static/js/moment.min.js" | prepend:site.baseurl }}"></script>
+    <script src="{{ "/static/js/moment-timezone-with-data.min.js" | prepend:site.baseurl }}"></script>
+    <script src="{{ "/static/js/store.min.js" | prepend:site.baseurl }}"></script>
+    <script src="{{ "/static/js/ouical.min.js" | prepend:site.baseurl }}"></script>
+
+  </head>
   <body>
     <div class="top-strip"></div>
     <div class="container">
@@ -249,12 +268,13 @@
           window.history.pushState('', '', '/?sub=' + subs.join());
         });
     });
-    // <!-- Google analytics -->
-    //   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    //   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    //   ga('create', '{{ site.ga_id }}', 'auto');
-    //   ga('send', 'pageview');
+    <!-- Google analytics -->
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.ga_id }}', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
+</html>
