@@ -71,7 +71,7 @@
 
 
 
-
+        
         {% for conf in site.data.conferences %}
         <div id="{{conf.id}}" class="{% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
           <div class="row conf-row">
@@ -123,12 +123,6 @@
         </footer> -->
         <br><br>
     </div>
-
-
-
-
-
-
     <script type="text/javascript" charset="utf-8">
     $(function() {
         // Make sure this is >= no. of subs
@@ -226,7 +220,7 @@
         var url = new URL(window.location);
         var subs = url.searchParams.get('sub');
         if (subs == undefined) {
-           subs = store.get('https://uclasunlab.github.io/conferences/');
+           subs = store.get('{{ site.domain }}');
         } else {
            subs = subs.toUpperCase().split(',');
         }
@@ -247,7 +241,7 @@
             $('.' + all_subs[i] + '-conf').hide();
           }
         }
-        store.set('https://uclasunlab.github.io/conferences/', subs);
+        store.set('{{ site.domain }}', subs);
         window.history.pushState('', '', '/?sub=' + subs.join());
 
         // Event handler on checkbox change
@@ -267,7 +261,7 @@
               subs.splice(idx, 1);
           }
           console.log(subs);
-          store.set('https://uclasunlab.github.io/conferences/', subs);
+          store.set('{{ site.domain }}', subs);
           window.history.pushState('', '', '/?sub=' + subs.join());
         });
 
@@ -286,7 +280,7 @@
           }
           subs = [csub];
           console.log(subs);
-          store.set('https://uclasunlab.github.io/conferences/', subs);
+          store.set('{{ site.domain }}', subs);
           window.history.pushState('', '', '/?sub=' + subs.join());
         });
     });
